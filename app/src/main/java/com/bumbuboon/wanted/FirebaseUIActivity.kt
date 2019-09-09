@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.auth.kotlin
+package com.bumbuboon.wanted
 
 import android.app.Activity
 import android.content.Intent
@@ -9,8 +9,6 @@ import android.widget.Toast
 import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.quickstart.auth.BuildConfig
-import com.google.firebase.quickstart.auth.R
 import kotlinx.android.synthetic.main.activity_firebase_ui.detail
 import kotlinx.android.synthetic.main.activity_firebase_ui.signInButton
 import kotlinx.android.synthetic.main.activity_firebase_ui.signOutButton

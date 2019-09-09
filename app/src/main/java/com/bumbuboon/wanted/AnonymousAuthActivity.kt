@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.auth.kotlin
+package com.bumbuboon.wanted
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.quickstart.auth.R
 import kotlinx.android.synthetic.main.activity_anonymous_auth.anonymousStatusEmail
 import kotlinx.android.synthetic.main.activity_anonymous_auth.anonymousStatusId
 import kotlinx.android.synthetic.main.activity_anonymous_auth.buttonAnonymousSignIn

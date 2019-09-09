@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.auth.kotlin
+package com.bumbuboon.wanted
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.TwitterAuthProvider
-import com.google.firebase.quickstart.auth.R
 import com.twitter.sdk.android.core.Callback
 import com.twitter.sdk.android.core.Result
 import com.twitter.sdk.android.core.Twitter

@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.auth.kotlin
+package com.bumbuboon.wanted
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthActionCodeException
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.quickstart.auth.R
 import kotlinx.android.synthetic.main.activity_passwordless.fieldEmail
 import kotlinx.android.synthetic.main.activity_passwordless.passwordlessButtons
 import kotlinx.android.synthetic.main.activity_passwordless.passwordlessFields

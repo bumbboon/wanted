@@ -1,4 +1,4 @@
-package com.google.firebase.quickstart.auth.kotlin
+package com.bumbuboon.wanted
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
-import com.google.firebase.quickstart.auth.R
 import kotlinx.android.synthetic.main.activity_phone_auth.buttonResend
 import kotlinx.android.synthetic.main.activity_phone_auth.buttonStartVerification
 import kotlinx.android.synthetic.main.activity_phone_auth.buttonVerifyPhone
