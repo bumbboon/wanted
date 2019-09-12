@@ -32,27 +32,90 @@ public class QuestboardActivity extends AppCompatActivity {
         manager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
         staggeredRv.setLayoutManager(manager);
         // lets create a simple array list of images
-        List<row> lst = new ArrayList<>();
-        lst.add(new row(R.drawable.illustrationtwo));
-        lst.add(new row(R.drawable.clothes));
-        lst.add(new row(R.drawable.illustration));
-        lst.add(new row(R.drawable.clothes));
-        lst.add(new row(R.drawable.paint2));
-        lst.add(new row(R.drawable.paint));
-        lst.add(new row(R.drawable.clothestwo));
-        lst.add(new row(R.drawable.wallpaper));
-        lst.add(new row(R.drawable.illustrationtwo));
-        lst.add(new row(R.drawable.illustration));
-        lst.add(new row(R.drawable.clothes));
-        lst.add(new row(R.drawable.paint2));
-        lst.add(new row(R.drawable.paint));
-        lst.add(new row(R.drawable.clothestwo));
-        lst.add(new row(R.drawable.wallpaper));
-        lst.add(new row(R.drawable.clothes));
+        List<Bounty> lst = new ArrayList<>();
+        Bounty bounty;
 
+        // 1st bounty
+        bounty = new Bounty(R.drawable.illustrationtwo);
+        bounty.setBountyName("illustrationtwo");
+        lst.add(bounty);
+
+        // 2nd bounty
+        lst.add(new Bounty(R.drawable.clothes));
+        bounty.setBountyName("clothes");
+        lst.add(bounty);
+
+        // 3rd bounty
+        lst.add(new Bounty(R.drawable.illustration));
+        bounty.setBountyName("illustration");
+        lst.add(bounty);
+
+        // 4th bounty
+        lst.add(new Bounty(R.drawable.clothes));
+        bounty.setBountyName("clothes");
+        lst.add(bounty);
+
+        // 5th bounty
+        lst.add(new Bounty(R.drawable.paint2));
+        bounty.setBountyName("paint2");
+        lst.add(bounty);
+
+        // 6th bounty
+        lst.add(new Bounty(R.drawable.paint));
+        bounty.setBountyName("paint");
+        lst.add(bounty);
+
+        // 7th bounty
+        lst.add(new Bounty(R.drawable.clothestwo));
+        bounty.setBountyName("clothestwo");
+        lst.add(bounty);
+
+        // 8th bounty
+        lst.add(new Bounty(R.drawable.wallpaper));
+        bounty.setBountyName("wallpaper");
+        lst.add(bounty);
+
+        // 9th bounty
+        lst.add(new Bounty(R.drawable.illustrationtwo));
+        bounty.setBountyName("illustrationtwo");
+        lst.add(bounty);
+
+        // 10th bounty
+        lst.add(new Bounty(R.drawable.illustration));
+        bounty.setBountyName("illustration");
+        lst.add(bounty);
+
+        // 11th bounty
+        lst.add(new Bounty(R.drawable.clothes));
+        bounty.setBountyName("clothes");
+        lst.add(bounty);
+
+        // 12th bounty
+        lst.add(new Bounty(R.drawable.paint2));
+        bounty.setBountyName("paint2");
+        lst.add(bounty);
+
+        // 13th bounty
+        lst.add(new Bounty(R.drawable.paint));
+        bounty.setBountyName("paint");
+        lst.add(bounty);
+
+        // 14th bounty
+        lst.add(new Bounty(R.drawable.clothestwo));
+        bounty.setBountyName("clothestwo");
+        lst.add(bounty);
+
+        // 15th bounty
+        lst.add(new Bounty(R.drawable.wallpaper));
+        bounty.setBountyName("wallpaper");
+        lst.add(bounty);
+
+        // 16th bounty
+        lst.add(new Bounty(R.drawable.clothes));
+        bounty.setBountyName("clothes");
+        lst.add(bounty);
 
         adapter = new StaggeredRecyclerAdapter(this,lst);
         staggeredRv.setAdapter(adapter);
-
     }
 }

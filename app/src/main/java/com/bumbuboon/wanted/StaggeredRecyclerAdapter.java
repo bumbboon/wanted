@@ -14,10 +14,10 @@ import java.util.List;
 public class StaggeredRecyclerAdapter extends RecyclerView.Adapter<StaggeredRecyclerAdapter.ImageViewHolder> {
 
     Context mContext;
-    List<row> mdata;
+    List<Bounty> mdata;
     RequestOptions requestOptions ;
 
-    public StaggeredRecyclerAdapter(Context mContext, List<row> mdata) {
+    public StaggeredRecyclerAdapter(Context mContext, List<Bounty> mdata) {
         this.mContext = mContext;
         this.mdata = mdata;
         requestOptions = new RequestOptions().fitCenter();
@@ -27,13 +27,13 @@ public class StaggeredRecyclerAdapter extends RecyclerView.Adapter<StaggeredRecy
     @NonNull
     @Override
     public ImageViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.row_item,viewGroup,false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.bounty_item,viewGroup,false);
         return new ImageViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ImageViewHolder imageViewHolder, int i) {
-        imageViewHolder.img.setImageResource(mdata.get(i).getImg());
+        imageViewHolder.img.setImageResource(mdata.get(i).getBounty());
         // bind image here
         // for better perfermance we will use Glide to load and cache images
         // first lets add the depandencies
